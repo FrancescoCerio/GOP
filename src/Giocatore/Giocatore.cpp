@@ -37,14 +37,12 @@ Giocatore::Giocatore(string n){
 
     
 int Giocatore::aggiungiPunti(int p){
-    this->punti = this->punti + p;
-    return (this->punti);
+    return (this->punti+=p);
 }
 
     
 int Giocatore::rimuoviPunti(int p){
-    this->punti = this->punti - p;
-    return (this->punti);
+    return (this->punti-=p);
 }
     
 
